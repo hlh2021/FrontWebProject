@@ -10,13 +10,13 @@ To run the code, the following environment is required:
 * Java
 * MySQL installed and database connection updated in config.properties. 
 
-# Show webpages. 
+# Show Webpages
 
 After tomcat started successfully, open the browser and enter
 
-1. http://localhost:8080/FrontWebProject/show: show the page of this web application, then choose the topic to see the graphs and data.
+http://localhost:8080/FrontWebProject/show: show the page of this web application, then choose the topic to see the graphs and data.
 
-2. http://localhost:8080/FrontWebProject/distribution.jsp: show the result of different data analysis, such as
+http://localhost:8080/FrontWebProject/distribution.jsp: show the result of different data analysis, such as
 
 1) User Continued Interest: the distribution of user's continued interest after the story disappears from Google News,
 
