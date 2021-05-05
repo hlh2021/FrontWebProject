@@ -1,0 +1,10 @@
+{"total":28,"rows":[
+	{"NewsWebsite":"DailyMail","day1":"253","day2":"389","day3":"1492","day4":"1878","day5":"3113"},
+	{"NewsWebsite":"the Guardian","day1":"541","day2":"992","day3":"1860","day4":"2812","day5":"4045"},
+	{"NewsWebsite":"BBC News","day1":"1404","day2":"2611","day3":"3834","day4":"5007","day5":"6094"},
+	{"NewsWebsite":"AL Jazeera","day1":"653","day2":"1037","day3":"2079","day4":"2459","day5":"3985"},
+	{"NewsWebsite":"New York Daily News","day1":"307","day2":"618","day3":"1033","day4":"2342","day5":"4369"},
+	{"NewsWebsite":"Wall Street Journal","day1":"331","day2":"767","day3":"1267","day4":"1828","day5":"2716"}
+	
+
+]}

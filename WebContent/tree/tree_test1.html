@@ -1,0 +1,84 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Google News Crawler Demo</title>
+	<link rel="stylesheet" type="text/css" href="../EasyUI/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../EasyUI/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../EasyUI/demo/demo.css">
+	<script type="text/javascript" src="../EasyUI/jquery.min.js"></script>
+	<script type="text/javascript" src="../EasyUI/jquery.easyui.min.js"></script>
+	 <script type="text/javascript">
+	 function rowformater(value,row,index)
+	{
+			return "<a href='"+row.NewsWebsite+"' target='_blank'>"+row.NewsWebsite+"</a>";
+	}
+ </script>
+
+</head>
+<body>
+
+	<div class="easyui-layout" style="width:auto;height:650px;">
+		<div region="west" split="true" title="Navigator" style="width:180px;">
+		
+		<div style="width:auto;height:600;border:1px solid #ccc;">
+		<ul id="tt" class="easyui-tree" url="tree_googlecategory.json"></ul>
+	</div>
+		</div>
+
+	<div region="east" split="true" style="width:440px;height:auto">
+		<div class="easyui-tabs" style="width:auto;height:auto">
+		<div title="Event Aftermath Analyzer" style="padding:5px"  align="center" >
+			<p> <img src="images/unnamed1.png"/></p>
+			<p> Fine-grained sentiment expressed in news comments on the </br> 8/19 Event "Foley execution"</p>
+
+				<table class="easyui-datagrid" title="Sentiment Dimensions" style="width:auto;height:auto" 
+								data-options="autoRowHeight:true,fitColumns :true,singleSelect:true,collapsible:true,url:'SentimentDimensions.json',method:'get'">							
+					<thead>
+						<tr>
+							<th data-options="field:'agree',width:90,align:'center'">agree</th>
+							<th data-options="field:'angry',width:90,align:'center'">angry</th>
+							<th data-options="field:'scorn',width:90,align:'center'">scorn</th>
+							<th data-options="field:'concern',width:90,align:'center'">concern</th>
+						</tr>
+					</thead>
+							
+				</table>
+				
+				
+				<table class="easyui-datagrid" title="Aspect Categories" "fit:true" style="width:auto;height:auto"
+						data-options="fitColumns :true,singleSelect:true,collapsible:true,url:'AspectCategory.json',method:'get'">
+					<thead>
+						<tr>
+							<th data-options="field:'execution',width:90,align:'center'">execution</th>
+							<th data-options="field:'isis',width:90,align:'center'">isis</th>
+							<th data-options="field:'US',width:90,align:'center'">US</th>
+							<th data-options="field:'foley',width:90,align:'center'">foley</th>
+						</tr>
+					</thead>
+				</table>
+		</div>
+	</div>
+</div>
+	<div id="content" region="center" style="padding:5px" title="Story Sentiment Tracker " >
+			<p>Dynamics between search traffic, news traffic and social sentiment on the ISIS story for the month of Aug, 2014.</p>
+			<p align="center"> <img src="images/sentiment_tracker2.png"/></p>
+			<table class="easyui-datagrid" title="News Source Summary" style="width:auto;height:auto"
+			data-options="fitColumns :true,rownumbers:true,singleSelect:true,pagination:true,url:'datagrid_data1.json',method:'get'">
+				<thead>
+					<tr>
+						<th data-options="field:'NewsWebsite',width:140, formatter:rowformater">News Source</th>
+						<th data-options="field:'day1',width:90,align:'center'">four days ago</th>
+						<th data-options="field:'day2',width:90,align:'center'">three days ago</th>
+						<th data-options="field:'day3',width:90,align:'center'">two days ago</th>
+						<th data-options="field:'day4',width:90,align:'center'">one day ago</th>
+						<th data-options="field:'day5',width:90,align:'center'">today</th>
+						
+					</tr>
+				</thead>
+			</table>
+
+		
+
+	</div>
+</body>
+</html>
