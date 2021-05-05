@@ -3,7 +3,7 @@
 
 FrontWebProject contains UI implementation to show the data analysis result in our WIRE 2019 publication:
 
-* **He, L., Han, C., Mukherjee, A., Obradovic, Z., Dragut, E., On the Dynamics of User Engagement in News Comment Media, WIRE, 2019**
+[**On the Dynamics of User Engagement in News Comment Media**](https://www.researchgate.net/publication/337008981_On_the_dynamics_of_user_engagement_in_news_comment_media)
 
 To run the code, the following environment is required:
 * tomcat
