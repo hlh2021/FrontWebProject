@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <servlet-name>quinnwebservlet</servlet-name>
+    <servlet-class>servlet.quinnwebservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>quinnwebservlet</servlet-name>
+    <url-pattern>/show</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>TableUpdateServlet</servlet-name>
+    <servlet-class>servlet.TableUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>TableUpdateServlet</servlet-name>
+     <url-pattern>/TableUpdate</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ContinuedDaysServlet</servlet-name>
+    <servlet-class>servlet.ContinuedDaysServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ContinuedDaysServlet</servlet-name>
+     <url-pattern>/ContinuedDays</url-pattern>
+   </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>ContinuedHoursServlet</servlet-name>
+    <servlet-class>servlet.ContinuedHoursServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ContinuedHoursServlet</servlet-name>
+     <url-pattern>/ContinuedHours</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>CommentfNumberServlet</servlet-name>
+    <servlet-class>servlet.CommentfNumberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CommentfNumberServlet</servlet-name>
+     <url-pattern>/CommentfNumber</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CommentPercentageInGoogleNewsServlet</servlet-name>
+    <servlet-class>servlet.CommentPercentageInGoogleNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CommentPercentageInGoogleNewsServlet</servlet-name>
+     <url-pattern>/CommentPercentageInGoogleNews</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetTopStoryServlet</servlet-name>
+    <servlet-class>servlet.GetTopStoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>GetTopStoryServlet</servlet-name>
+     <url-pattern>/GetTopStory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DensityOfRatioServlet</servlet-name>
+    <servlet-class>servlet.DensityOfRatioServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DensityOfRatioServlet</servlet-name>
+     <url-pattern>/DensityOfRatio</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CommentLastedTimeRangeServlet</servlet-name>
+    <servlet-class>servlet.CommentLastedTimeRangeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CommentLastedTimeRangeServlet</servlet-name>
+     <url-pattern>/CommentLastedTimeRange</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ArticleVolumeServlet</servlet-name>
+    <servlet-class>servlet.ArticleVolumeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ArticleVolumeServlet</servlet-name>
+     <url-pattern>/ArticleVolume</url-pattern>
+   </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>CommentVolumeServlet</servlet-name>
+    <servlet-class>servlet.CommentVolumeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CommentVolumeServlet</servlet-name>
+     <url-pattern>/CommentVolume</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserVolumeServlet</servlet-name>
+    <servlet-class>servlet.UserVolumeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UserVolumeServlet</servlet-name>
+     <url-pattern>/UserVolume</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserVolumeForAllOutletsServlet</servlet-name>
+    <servlet-class>servlet.UserVolumeForAllOutletsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UserVolumeForAllOutletsServlet</servlet-name>
+     <url-pattern>/UserVolumeForAllOutlets</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserCommentContributionServlet</servlet-name>
+    <servlet-class>servlet.UserCommentContributionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UserCommentContributionServlet</servlet-name>
+     <url-pattern>/UserCommentContribution</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CommentNetworkPropertiesServlet</servlet-name>
+    <servlet-class>servlet.CommentNetworkPropertiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CommentNetworkPropertiesServlet</servlet-name>
+     <url-pattern>/CommentNetworkProperties</url-pattern>
+  </servlet-mapping>
+  
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/newsdb</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <welcome-file-list>
+    <welcome-file>MainPage.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
